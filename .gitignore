@@ -1,0 +1,10 @@
+node_modules/*
+node_modules
+.sass-cache
+.sass-cache/
+.idea
+.idea/
+.vscode
+.vscode/
+.tmp
+bower_components

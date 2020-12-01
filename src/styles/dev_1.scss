@@ -1,0 +1,823 @@
+.advertising {
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+}
+
+.active-page::before {
+    content: '';
+    position: absolute;
+    left: -12px;
+    bottom: 0;
+
+    width: 67px;
+    height: 4px;
+
+    background-color: #ff7373;
+}
+
+.burger {
+    z-index: 11;
+    display: none;
+    width: 50px;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 5px;
+    &.active {
+      .burger-brick:first-child {
+          transform: rotate(405deg);
+          margin-top: 14px;
+      }
+  
+      .burger-brick:last-child {
+          transform: rotate(-405deg);
+          margin-top: -10px;
+      }
+  
+      .middle {
+          transform: scale(0);
+      }
+    }
+    
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .burger-brick {
+    height: 2px;
+    background: white;
+    margin-top: 6px;
+    transition: 0.3s ease-out;
+  }
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+// begin header
+.header-main {
+    .header-top {
+        background-color: #472424;
+        .header-wrapp-top {
+            display: flex;
+            justify-content: space-between;
+            .list-about-shop {
+                display: flex;
+                flex-wrap: wrap;
+
+                max-width: 720px;
+
+                margin-left: -13px;
+                li {
+                    a {
+                        display: block;
+
+                        font-size: 13px;
+                        line-height: 26px;
+
+                        padding: 12px;
+                        margin-right: 20px;
+                        &:hover {
+                            background-color: #ff7373;
+                        }
+                    }
+                }
+            }
+            .user-list {
+                display: flex;
+                li {
+                    a {
+                        display: block;
+
+                        padding: 12px 22px;
+
+                        font-size: 13px;
+                        line-height: 26px;
+                        &.items {
+                            padding-left: 35px;
+                            background-image: url(../images/basket.png);
+                            background-repeat: no-repeat;
+                            background-position: 2px 13px;
+                            .color-items {
+                                color: #dcc5b8;
+                            }
+                        }
+                        &.login {
+                            position: relative;
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+
+                                width: 1px;
+                                height: 100%;
+
+                                background-color: #5a3a3a;
+                            }
+                        }
+                        &:hover {
+                            background-color: #ff7373;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .header-bottom {
+        background-color: #603131;
+        .header-nav {
+            display: flex;
+            justify-content: space-between;
+            .logo {
+                margin-top: 22px;
+            }
+            .nav-list {
+                display: flex;
+                li {
+                    position: relative;
+                    &:last-child a {
+                        margin-right: 0;
+                    }
+                    a {
+                        display: block;
+                        position: relative;
+
+                        font-size: 16px;
+                        line-height: 26px;
+
+                        margin: 0 20px;
+                        padding: 25px 0;
+                        
+                        &:hover {
+                            color: #ff7373;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//end header
+
+//begin variety-sneakers
+.variety-sneakers {
+    display: flex;
+    position: relative;
+
+    background-color: #f0efee;
+
+    margin-bottom: 49px;
+    .img-sneaker {
+        img {
+            margin-top: -84px;
+            
+        }
+    }
+    .about-nike {
+        margin-left: 37px;
+        margin-top: 133px;
+        li {
+            .price {
+                display: block;
+
+                color: #623232;
+                font-size: 30px;
+                word-spacing: 10px;
+                padding-left: 3px;
+                margin-bottom: 15px;
+            }
+            .nike {
+                display: block;
+
+                color: #623232;
+                font-size: 70px;
+
+                margin-bottom: 15px;
+            }
+            .variants {
+                display: block;
+
+                color:  #ff7373;
+                font-size: 50px;
+
+                margin-bottom: 20px;
+            }
+            .about-variants{
+                max-width: 410px;
+    
+                line-height: 26px;
+                word-spacing: 4px;
+
+                margin-bottom: 33px;
+            }
+            .button {
+                background-color: #ff7373;
+                display: block;
+                width: 255px;
+                padding: 16px 0px 16px 0;
+                text-align: center;
+                text-transform: uppercase;
+                &:hover {
+                    background-color: #c53b3b;
+                }
+            }
+        }
+    }
+}
+//end variety-sneakers
+
+//begin advantages-nike
+.advantages-nike {
+    background-color: white;
+
+    margin-bottom: 95px;
+    .container {
+        display: flex;
+        .viev-collection {
+            position: relative;
+
+            max-width: 557px;
+            width: 100%;
+
+            margin-right: 32px;
+            .viev-collection-img {
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .advertising {
+                position: absolute;
+                top: 38px;
+                left: 21%;
+    
+                color: white;
+                word-spacing: 4px;
+    
+                width: 320px;
+                strong {
+                    color: #4bd8cd;
+                    text-transform: uppercase;
+                }
+            }
+            a {
+                display: block;
+                position: absolute;
+                top: 442px;
+                left: 29%;
+    
+                width: 211px;
+                padding: 11px 0;
+    
+                text-align: center;
+                font-size: 16px;
+                line-height: 26px;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: black;
+    
+                background-color: #4bd8cd;
+                &:hover {
+                    background-color: #c53b3b;
+                }
+            }
+    }
+    }
+    .advantages {
+        display: flex;
+        flex-wrap: wrap;
+        .discover {
+            position: relative;
+
+            max-width: 540px;
+            width: 100%;
+
+            margin-bottom: 32px;
+            .discover-img {
+                img {
+                    margin: -18px 0 0 0;
+                    object-fit: cover;
+                    height: 100%;
+                }
+            }
+
+            .advertising {
+                position: absolute;
+                top: 23%;
+                left: 41%;
+
+                width: 250px;
+                strong {
+                    text-transform: uppercase;
+                }
+            }
+            a {
+                display: block;
+                position: absolute;
+                top: 58%;
+                left: 51%;
+                text-transform: uppercase;
+                font-weight: bold;
+                background-color: #623232;
+                padding: 16px 31px;
+                &:hover {
+                    background-color: #c53b3b;
+                }
+            }
+        }
+        .wrapper {
+            display: flex;
+            .best-athletes {
+                position: relative;
+    
+                max-width: 255px;
+    
+                margin-right: 35px;
+                .best-athletes-img {
+                    img {
+                        object-fit: cover;
+                        height: 100%;
+                    }
+                }
+                .advertising {
+                    position: absolute;
+                    top: 56%;
+                    left: 3%;
+                    color: white;
+                    strong {
+                        text-transform: uppercase;
+                        color: #ff7373;
+                    }
+                }
+            }
+            .premium {
+                position: relative;
+    
+                max-width: 255px;
+                .advertising {
+                    position: absolute;
+                    top: 12%;
+                    left: 13%;
+                    width: 180px;
+                    strong {
+                        text-transform: uppercase;
+                        color: white;
+                    }
+                }
+                .premium-img {
+                    img {
+                        object-fit: cover;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+//end advantages-nike
+//begin selling-nike
+.selling-nike {
+    margin-bottom: 77px;
+    .nav-list {
+        display: flex;
+        justify-content: center;
+
+        margin-bottom: 44px;
+        .nav-item {
+            margin-right: 38px;
+            color: #bdb9b5;
+            text-transform: uppercase;
+            font-size: 30px;
+            cursor: pointer;
+            &:focus{
+                color: red;
+            }
+            &:hover {
+                color: #623232;
+            }
+            &.active {
+                color: #623232;
+                font-weight: bold;
+            }
+        }
+    }
+    .shop-wrapp {
+        .tab-index {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 77px;
+            &.add-flex {
+                display: flex;
+            }
+            li {
+                position: relative;
+    
+                width: 255px;
+                min-height: 350px;
+                border: 1px solid #e0dfde ;
+    
+                margin: 0 30px 30px 0;
+                &:nth-child(4n+4) {
+                    margin-right: 0;
+                }
+                .discount-price {
+                    display: block;
+    
+                    color: #ff7373;
+                    font-size: 25px;
+                    margin: 26px 0 9px 28px;
+                }
+                .discount-price-not {
+                    display: block;
+    
+                    color: #b1afad;
+                    text-decoration: line-through;
+    
+                    margin: 0 0 178px 30px;
+                }
+                .sale {
+                    position: absolute;
+                    top: 22px;
+                    left: 192px;
+    
+                    width: 61px;
+    
+                    text-align: center;
+                    color: white;
+    
+                    background-color: #ff7373;
+    
+                    padding: 6px 0;
+                }
+                .price {
+                    display: block;
+    
+                    margin: 26px 0 203px 30px;
+    
+                    font-size: 25px;
+                }
+                .shop-wrapp-img {
+                    img {
+                        position: absolute;
+                        top: 80px;
+                        left: 26px;
+    
+                        width: 200px;
+                    }
+                }
+                h4 {
+                    margin: 0 0 10px 28px;
+    
+                    text-transform: uppercase;
+                }
+                .article {
+                    display: block;
+    
+                    margin-left: 30px;
+                }
+                a {
+                    display: block;
+    
+                    width: 180px;
+                    margin: 0 0 12px 28px;
+    
+                    color: #a19f9d;
+                }
+            }
+        }
+        .shop-list-popular {
+            display: none;
+        }
+        .top-picks {
+            display: none;
+        }
+    }
+    .label-list {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        li {
+            margin: 0 15px 15px 0;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+//end selling-nike
+//begin peoples-comments
+.peoples-comments {
+    position: relative;
+    background-image: url(../images/background1.jpg);
+
+    margin-bottom: 100px;
+    .list-visitor {
+        max-width: 575px;
+        width: 100%;
+        margin: 0 auto;
+
+        .slick-list {
+            padding: 0!important;
+        }
+   
+
+        padding-top: 100px;
+        margin-bottom:48px;
+        .list-item {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            opacity: 0.5;
+
+            cursor: pointer;
+            &.slick-current.slick-center {
+                opacity: 1;
+            }
+            .visitor-photo {
+                width: 65px;
+                height: 65px;
+                background-color: white;
+                border-radius: 50%;
+                margin-bottom: 26px;
+            }
+            .name-user {
+                color: white;
+                text-align: center;
+
+                margin-bottom: 5px;
+            }
+            .name-user-active {
+                color: white;
+                text-align: center;
+            }
+        }
+    }
+    .user-comments {
+        margin-bottom: 98px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -41px;
+            left: 48%;
+
+            border: 20px solid transparent;
+            border-bottom: 21px solid rgba($color: #ffffff, $alpha: 0.2);
+        }
+        // text-align: center;
+        .comments-item {
+            // display: none;
+            position: relative;
+            text-align: center;
+            color: white;
+            line-height: 26px;
+            font-size: 18px;
+
+            border: 1px;
+            background-color: rgba($color: #ffffff, $alpha: 0.2);
+
+            margin: 0 auto;
+            padding: 43px 56px;
+        }
+    }
+}
+//begin news
+.news {
+    margin-bottom: 85px;
+    h3 {
+        font-size: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #623232;
+
+        margin-bottom: 45px;
+    }
+    .news-list-wrapp {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .news-item {
+            position: relative;
+            color: white;
+            &:last-child {
+                .news-wrapp-img {
+                    img {
+                        margin-right: 0;
+                    }
+                }
+            }
+            .news-wrapp-img {
+                img {
+                    margin: 0 15px 15px 0;
+                    object-fit: cover;
+                    height: 100%;
+                }
+            }
+            .news-description {
+                position: absolute;
+                top: 229px;
+                h4{
+                    text-transform: uppercase;
+
+                    margin: 0 0 5px 30px;
+                }
+                p {
+                    width: 220px;
+
+                    margin: 0 0 2px 30px;
+
+                    line-height: 26px;
+                }
+                .comments {
+                    color: #f36e6e;
+                    font-size: 14px;
+                    margin-left: 20px;
+                    padding:  5px 0 5px 40px;
+                    background-image: url(../images/51.png);
+                    background-repeat: no-repeat;
+                    background-position: 9px 3px;
+                }
+            }
+        }
+    }
+}
+//end news
+//begin support
+.support {
+    background-color: #ff7373;
+    padding-bottom: 84px;
+    .main-wrapp {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .support-wrapp {
+            padding: 69px 0 0 87px;
+    
+            background-image: url(../images/support.png);
+            background-repeat: no-repeat;
+            background-position: 0px 79px;
+    
+            color: white;
+            h3 {
+                text-transform: uppercase;
+                font-size: 30px;
+    
+                margin: 0 0 13px 0;
+            }
+            p {
+                word-spacing: 4px;
+                line-height: 19px;
+
+                max-width: 460px;
+            }
+        }
+        .button-wrapp {
+            margin-top: 92px;
+            a {
+                text-transform: uppercase;
+                padding: 15px 33px;
+                background-color: #623232;
+                &:hover {
+                    background-color: #c53b3b;
+                }
+            }
+        }
+    }
+}
+//end support
+//bebin footer
+.footer {
+    background-color: #623232;
+    .service-benefits {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        color: white;
+
+        padding: 55px 0 26px 0;
+
+        border-bottom: 1px solid #795151;
+
+        margin-bottom: 100px;
+        li {
+            width: 150px;
+            text-align: center;
+
+            margin: 0 15px 15px 0;
+            &:last-child {
+                margin-right: 0;
+            }
+            img {
+                height: 40px;
+
+                margin-bottom: 20px;
+            }
+            p {
+                line-height: 26px;
+            }
+        }
+    }
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        color: white;
+
+        border-bottom: 1px solid #795151;
+
+        padding-bottom: 80px;
+
+        margin-bottom: 42px;
+        a {
+            &:hover {
+                color: #ff7373;
+            }
+        }
+        ul {
+            margin: 0 15px 0 0;
+            &:last-child {
+                margin-right: 0;
+            }
+            &.contact-list {
+                li {
+                    display: flex;
+                    margin-bottom: 20px;
+                    h4 {
+                        text-transform: uppercase;
+                        color: #ff7373;
+    
+                        margin: 7px 0 10px 18px;
+                    }
+                    a,
+                    p {
+                        margin: 0 0 0 18px;
+                    }
+                }
+            }
+        }
+        .footer-list {
+            li {
+                line-height: 17px;
+                margin-bottom: 18px;
+                &.title {
+                    text-transform: uppercase;
+                    color: #ff7373;
+                    h4 {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+    .footer-bottom-wrapp {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        color: white;
+
+        margin-bottom: 50px;
+        .item {
+            margin: 0 30px 15px 0;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        .developed {
+            margin-top: 10px;
+        }
+        .social-list {
+            display: flex;
+            li {
+                margin-right: 23px;
+                &:hover {
+                    background-color: #c53b3b;
+                }
+                a {
+                    img {
+                        height: 27px;
+                    }
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+//end footer

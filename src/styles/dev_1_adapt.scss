@@ -1,0 +1,481 @@
+@media screen and (max-width: 1536px){
+    .variety-sneakers {
+        .img-sneaker {
+            img {
+                width: 742px;
+            }
+        }
+        .about-nike {
+            margin-top: 60px;
+        }
+    }
+}
+@media screen and (max-width: 1280px){
+    .variety-sneakers {
+        .img-sneaker {
+            img {
+                width: 615px;
+                margin-top: 10px;
+            }
+        }
+        .about-nike {
+            margin-top: 60px;
+            li {
+                .nike {
+                    font-size: 65px;
+                }
+            }
+        }
+    }
+    .advantages-nike {
+        .container {
+            .viev-collection {
+                .advertising {
+                    left: calc(40% - 100px);
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1152px){
+    .selling-nike {
+        .shop-wrapp {
+            .tab-index {
+                justify-content: center;
+                li {
+                    margin: 0 30px 30px 30px;
+                    &:nth-child(4n+4) {
+                        margin-right: 30px;
+                    }
+                }
+            }
+        }
+    }
+.news {
+    .news-list-wrapp {
+        justify-content: center;
+    }
+}
+}
+@media screen and (max-width: 1024px){
+    .variety-sneakers {
+        .about-nike {
+            margin-top: 25px;
+            li {
+                .nike {
+                    font-size: 55px;
+                }
+                .about-variants {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    .advantages-nike {
+        .container {
+            .viev-collection {
+                .advertising {
+                    left: 16%;
+                }
+            }
+        }
+    }
+    .footer {
+        .service-benefits {
+            justify-content: center;
+        }
+    }
+}
+@media screen and (max-width: 960px){
+    .advantages-nike {
+        .container {
+            .viev-collection {
+                .advertising {
+                    left: 8%;
+                }
+                a {
+                    left: 22%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 854px){
+    .header-main {
+        .header-top {
+            .header-wrapp-top {
+                .list-about-shop {
+                    display: none;
+                }
+                .user-list {
+                    margin: 0 auto;
+                }
+            }
+        }
+        .header-bottom {
+            .header-nav {
+                .logo {
+                    margin: 12px auto;
+                }
+                .nav-list {
+                    display: none;
+                    flex-wrap: wrap;
+
+                    position: absolute;
+                    top: 48px;
+                    left: 0;
+                    z-index: 3;
+
+                    background-color: #623232;
+                    width: 100%;
+                }
+                .burger {
+                    display: block;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    
+    .variety-sneakers {
+        flex-direction: column;
+        .about-nike {
+            margin: 15px auto;
+            text-align: center;
+            li {
+                .price {
+                    font-size: 20px;
+                }
+                .nike {
+                    font-size: 40px;
+                }
+                .variants {
+                    font-size: 35px;
+                }
+                .about-variants {
+                    margin-bottom: 10px;
+
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+                .button {
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+    .advantages-nike {
+        .container {
+            flex-direction: column;
+            align-items: center;
+            .viev-collection {
+                margin: 0 0 30px 0;
+                .viev-collection-img {
+                    img {
+                        object-fit: contain;
+                        width: 550px;
+                    }
+                }
+                .advertising {
+                    left: 22%;
+                }
+                a {
+                    top: 74%;
+                    left: 32%;
+                }
+            }
+            .advantages {
+                justify-content: center;
+                .discover {
+                    margin-bottom: 20px;
+                    .discover-img {
+                        img {
+                            object-fit: contain;
+                        }
+                    }
+                }
+                .wrapper {
+                    .best-athletes {
+                        margin-right: 10px;
+                        .best-athletes-img {
+                            img {
+                                object-fit: contain;
+                            }
+                        }
+                    }
+                    .premium {
+                        .premium-img {
+                            img {
+                                object-fit: contain;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .peoples-comments {
+        .user-comments {
+            &::before {
+                left: calc(48% - 7px)
+            }
+        }
+    }
+    .support {
+        .main-wrapp {
+            justify-content: center;
+        }
+    }
+}
+@media screen and (max-width: 760px){
+    .selling-nike {
+        .label-list {
+            flex-direction: column;
+            align-items: center;
+            li {
+                margin: 0 0 30px 0;
+            }
+        }
+    }
+    .news {
+        .news-list-wrapp {
+            .news-item {
+                &:last-child {
+                    .news-wrapp-img {
+                        img {
+                            margin-right: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        .service-benefits {
+            li {
+                margin: 0 0 15px 0;
+            }
+        }
+        .wrapper {
+            ul {
+                &:last-child {
+                    flex-grow: 1;
+                }
+            }
+        }
+        .footer-bottom-wrapp {
+            justify-content: center;
+        }
+    }
+}
+@media screen and (max-width: 720px) {
+    .footer {
+        .footer-bottom-wrapp {
+            flex-direction: column;
+            align-items: center;
+            .item {
+                margin-right: 0;
+            }
+        }
+    }
+}
+@media screen and (max-width: 640px){
+    .selling-nike {
+        .nav-list {
+            .nav-item {
+                font-size: 26px;
+            }
+        }
+        .shop-wrapp {
+            .tab-index {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    .advantages-nike {
+        .container {
+            .viev-collection {
+                margin-bottom: 20px;
+                .viev-collection-img {
+                    img {
+                        object-fit: cover;
+                        width: auto;
+                    }
+                }
+                .advertising {
+                    left: calc(50% - 100px);
+                    font-size: 23px;
+                    width: 200px;
+                }
+                a {
+                    top: 74%;
+                    left: calc(48% - 100px);
+                }
+            }
+            .advantages {
+                justify-content: center;
+                .discover {
+                    .discover-img {
+                        img {
+                            object-fit: cover;
+                        }
+                    }
+                    p {
+                        left: calc(37% - 52px);
+                        width: 200px;
+                        font-size: 23px;
+                        strong {
+                            color:#ffbbbb;
+                        }
+                    }
+                    a {
+                        left: calc(44% - 50px);
+                    }
+                }
+                .wrapper {
+                    display: block;
+                    .best-athletes {
+                        margin-bottom: 20px;
+                        .best-athletes-img {
+                            img {
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                    .premium {
+                        .premium-img {
+                            img {
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .selling-nike {
+        .container {
+            .nav-list {
+                margin-left: 12px;
+                .nav-item {
+                    font-size: 13px;
+                }
+            }
+            .shop-wrapp {
+                .tab-index {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .peoples-comments {
+        .list-visitor {
+            .slick-prev {
+                position: relative;
+                left: 3%;
+                top: 54px;
+                z-index: 1;
+                &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+
+                width: 25px;
+                height: 4px;
+                transform: rotate(-45deg);
+
+                background-color: #bb4545;
+                }
+                &::after {
+                content: '';
+                position: absolute;
+                top: 16px;
+                left: 0;
+
+
+                width: 25px;
+                height: 4px;
+                transform: rotate(45deg);
+
+                background-color: #bb4545; 
+                }
+            }
+            .slick-next {
+                position: relative;
+
+                left: 93%;
+                bottom: 100px;
+                &::before {
+                content: '';
+                position: absolute;
+                top: 17px;
+                right: 2px;
+
+                width: 25px;
+                height: 4px;
+                transform: rotate(-45deg);
+
+                background-color: #bb4545;
+                }
+                &::after {
+                content: '';
+                position: absolute;
+                top: 1px;
+                right: 3px;
+
+
+                width: 25px;
+                height: 4px;
+                transform: rotate(45deg);
+
+                background-color: #bb4545; 
+                }
+            }
+        }
+        .user-comments {
+            &::before {
+                left: calc(47% - 7px)
+            }
+        }
+    }
+    .support {
+        .main-wrapp {
+            .support-wrapp {
+                h3 {
+                    font-size: 17px;
+                }
+                p {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    .footer {
+        .wrapper {
+            flex-direction: column;
+            align-items: center;
+            .footer-list {
+                text-align: center;
+            }
+        }
+    }
+}
+@media screen and (max-width: 352px){
+    .header-main {
+        .header-top {
+            .header-wrapp-top {
+                .user-list {
+                    margin: 0 auto;
+                    li {
+                        a {
+                            padding: 12px 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

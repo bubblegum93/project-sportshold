@@ -1,0 +1,1397 @@
+/* base styles*/
+*, *:before, *:after {
+  box-sizing: border-box;
+  outline: none;
+}
+
+*, body, html {
+  -webkit-text-size-adjust: none;
+  -webkit-appearance: none;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  width: 100%;
+  min-width: 320px;
+  font-family: arial,sans-serif;
+  background: #fff;
+  color: #3d3d3d;
+  position: relative;
+  font-size: 16px;
+  line-height: 1;
+}
+
+img {
+  vertical-align: bottom;
+  border: 0;
+  max-width: 100%;
+}
+
+/* helping adds*/
+.clear {
+  clear: both;
+  font-size: 1px;
+  line-height: 1px;
+  height: 0;
+  overflow: hidden;
+}
+
+.cfix:after {
+  content: '';
+  display: block;
+  height: 0;
+  font-size: 1px;
+  line-height: 1px;
+  overflow: hidden;
+  clear: both;
+}
+
+.hidden-block {
+  position: absolute;
+  left: -99999em;
+  top: -99999em;
+}
+
+/* /helping adds*/
+/* wraps styling*/
+.mbox {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.mbox:after {
+  content: "";
+  clear: both;
+  font-size: 1px;
+  line-height: 1px;
+  height: 0;
+  overflow: hidden;
+  display: block;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+}
+
+.container:after {
+  content: "";
+  clear: both;
+  font-size: 1px;
+  line-height: 1px;
+  height: 0;
+  overflow: hidden;
+  display: block;
+}
+
+/* /wraps styling*/
+.footer_placeholder {
+  height: 200px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  overflow: hidden;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #212121;
+}
+
+input:-moz-placeholder, textarea:-moz-placeholder {
+  color: #212121;
+  opacity: 1;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #212121;
+  opacity: 1;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #212121;
+}
+
+/*fonts*/
+/*/fonts*/
+/* /base styles */
+/* ctext */
+.ctext h1, .ctext h2, .ctext h3, .ctext h4, .ctext h5, .ctext h6 {
+  line-height: 1.25;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.ctext h1 {
+  font-size: 36px;
+}
+
+.ctext h2 {
+  font-size: 70px;
+}
+
+.ctext h3 {
+  font-size: 50px;
+}
+
+.ctext h4 {
+  font-size: 30px;
+}
+
+.ctext h5 {
+  font-size: 20px;
+}
+
+.ctext h6 {
+  font-size: 16px;
+}
+
+.ctext p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* /ctext */
+/* styles for wp-admin panel */
+body.customize-support .wp-panel-show {
+  top: 32px;
+}
+
+@media screen and (max-width: 782px) {
+  body.customize-support .wp-panel-show {
+    top: 46px;
+  }
+  #wpadminbar {
+    position: fixed !important;
+  }
+}
+
+/* /styles for wp-admin panel */
+/*End Layout*/
+
+.advertising {
+  font-size: 30px;
+  line-height: 34px;
+  text-align: center;
+}
+
+.active-page::before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  bottom: 0;
+  width: 67px;
+  height: 4px;
+  background-color: #ff7373;
+}
+
+.burger {
+  z-index: 11;
+  display: none;
+  width: 50px;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.burger.active .burger-brick:first-child {
+  transform: rotate(405deg);
+  margin-top: 14px;
+}
+
+.burger.active .burger-brick:last-child {
+  transform: rotate(-405deg);
+  margin-top: -10px;
+}
+
+.burger.active .middle {
+  transform: scale(0);
+}
+
+.burger:hover {
+  opacity: 1;
+}
+
+.burger-brick {
+  height: 2px;
+  background: white;
+  margin-top: 6px;
+  transition: 0.3s ease-out;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-main .header-top {
+  background-color: #472424;
+}
+
+.header-main .header-top .header-wrapp-top {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.header-main .header-top .header-wrapp-top .list-about-shop {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 720px;
+  margin-left: -13px;
+}
+
+.header-main .header-top .header-wrapp-top .list-about-shop li a {
+  display: block;
+  font-size: 13px;
+  line-height: 26px;
+  padding: 12px;
+  margin-right: 20px;
+}
+
+.header-main .header-top .header-wrapp-top .list-about-shop li a:hover {
+  background-color: #ff7373;
+}
+
+.header-main .header-top .header-wrapp-top .user-list {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-main .header-top .header-wrapp-top .user-list li a {
+  display: block;
+  padding: 12px 22px;
+  font-size: 13px;
+  line-height: 26px;
+}
+
+.header-main .header-top .header-wrapp-top .user-list li a.items {
+  padding-left: 35px;
+  background-image: url(../images/basket.png);
+  background-repeat: no-repeat;
+  background-position: 2px 13px;
+}
+
+.header-main .header-top .header-wrapp-top .user-list li a.items .color-items {
+  color: #dcc5b8;
+}
+
+.header-main .header-top .header-wrapp-top .user-list li a.login {
+  position: relative;
+}
+
+.header-main .header-top .header-wrapp-top .user-list li a.login::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #5a3a3a;
+}
+
+.header-main .header-top .header-wrapp-top .user-list li a:hover {
+  background-color: #ff7373;
+}
+
+.header-main .header-bottom {
+  background-color: #603131;
+}
+
+.header-main .header-bottom .header-nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.header-main .header-bottom .header-nav .logo {
+  margin-top: 22px;
+}
+
+.header-main .header-bottom .header-nav .nav-list {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-main .header-bottom .header-nav .nav-list li {
+  position: relative;
+}
+
+.header-main .header-bottom .header-nav .nav-list li:last-child a {
+  margin-right: 0;
+}
+
+.header-main .header-bottom .header-nav .nav-list li a {
+  display: block;
+  position: relative;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 0 20px;
+  padding: 25px 0;
+}
+
+.header-main .header-bottom .header-nav .nav-list li a:hover {
+  color: #ff7373;
+}
+
+.variety-sneakers {
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  background-color: #f0efee;
+  margin-bottom: 49px;
+}
+
+.variety-sneakers .img-sneaker img {
+  margin-top: -84px;
+}
+
+.variety-sneakers .about-nike {
+  margin-left: 37px;
+  margin-top: 133px;
+}
+
+.variety-sneakers .about-nike li .price {
+  display: block;
+  color: #623232;
+  font-size: 30px;
+  word-spacing: 10px;
+  padding-left: 3px;
+  margin-bottom: 15px;
+}
+
+.variety-sneakers .about-nike li .nike {
+  display: block;
+  color: #623232;
+  font-size: 70px;
+  margin-bottom: 15px;
+}
+
+.variety-sneakers .about-nike li .variants {
+  display: block;
+  color: #ff7373;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.variety-sneakers .about-nike li .about-variants {
+  max-width: 410px;
+  line-height: 26px;
+  word-spacing: 4px;
+  margin-bottom: 33px;
+}
+
+.variety-sneakers .about-nike li .button {
+  background-color: #ff7373;
+  display: block;
+  width: 255px;
+  padding: 16px 0px 16px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.variety-sneakers .about-nike li .button:hover {
+  background-color: #c53b3b;
+}
+
+.advantages-nike {
+  background-color: white;
+  margin-bottom: 95px;
+}
+
+.advantages-nike .container {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.advantages-nike .container .viev-collection {
+  position: relative;
+  max-width: 557px;
+  width: 100%;
+  margin-right: 32px;
+}
+
+.advantages-nike .container .viev-collection .viev-collection-img img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.advantages-nike .container .viev-collection .advertising {
+  position: absolute;
+  top: 38px;
+  left: 21%;
+  color: white;
+  word-spacing: 4px;
+  width: 320px;
+}
+
+.advantages-nike .container .viev-collection .advertising strong {
+  color: #4bd8cd;
+  text-transform: uppercase;
+}
+
+.advantages-nike .container .viev-collection a {
+  display: block;
+  position: absolute;
+  top: 442px;
+  left: 29%;
+  width: 211px;
+  padding: 11px 0;
+  text-align: center;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+  background-color: #4bd8cd;
+}
+
+.advantages-nike .container .viev-collection a:hover {
+  background-color: #c53b3b;
+}
+
+.advantages-nike .advantages {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.advantages-nike .advantages .discover {
+  position: relative;
+  max-width: 540px;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.advantages-nike .advantages .discover .discover-img img {
+  margin: -18px 0 0 0;
+  object-fit: cover;
+  height: 100%;
+}
+
+.advantages-nike .advantages .discover .advertising {
+  position: absolute;
+  top: 23%;
+  left: 41%;
+  width: 250px;
+}
+
+.advantages-nike .advantages .discover .advertising strong {
+  text-transform: uppercase;
+}
+
+.advantages-nike .advantages .discover a {
+  display: block;
+  position: absolute;
+  top: 58%;
+  left: 51%;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #623232;
+  padding: 16px 31px;
+}
+
+.advantages-nike .advantages .discover a:hover {
+  background-color: #c53b3b;
+}
+
+.advantages-nike .advantages .wrapper {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.advantages-nike .advantages .wrapper .best-athletes {
+  position: relative;
+  max-width: 255px;
+  margin-right: 35px;
+}
+
+.advantages-nike .advantages .wrapper .best-athletes .best-athletes-img img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.advantages-nike .advantages .wrapper .best-athletes .advertising {
+  position: absolute;
+  top: 56%;
+  left: 3%;
+  color: white;
+}
+
+.advantages-nike .advantages .wrapper .best-athletes .advertising strong {
+  text-transform: uppercase;
+  color: #ff7373;
+}
+
+.advantages-nike .advantages .wrapper .premium {
+  position: relative;
+  max-width: 255px;
+}
+
+.advantages-nike .advantages .wrapper .premium .advertising {
+  position: absolute;
+  top: 12%;
+  left: 13%;
+  width: 180px;
+}
+
+.advantages-nike .advantages .wrapper .premium .advertising strong {
+  text-transform: uppercase;
+  color: white;
+}
+
+.advantages-nike .advantages .wrapper .premium .premium-img img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.selling-nike {
+  margin-bottom: 77px;
+}
+
+.selling-nike .nav-list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-bottom: 44px;
+}
+
+.selling-nike .nav-list .nav-item {
+  margin-right: 38px;
+  color: #bdb9b5;
+  text-transform: uppercase;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.selling-nike .nav-list .nav-item:focus {
+  color: red;
+}
+
+.selling-nike .nav-list .nav-item:hover {
+  color: #623232;
+}
+
+.selling-nike .nav-list .nav-item.active {
+  color: #623232;
+  font-weight: bold;
+}
+
+.selling-nike .shop-wrapp .tab-index {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 77px;
+}
+
+.selling-nike .shop-wrapp .tab-index.add-flex {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.selling-nike .shop-wrapp .tab-index li {
+  position: relative;
+  width: 255px;
+  min-height: 350px;
+  border: 1px solid #e0dfde;
+  margin: 0 30px 30px 0;
+}
+
+.selling-nike .shop-wrapp .tab-index li:nth-child(4n+4) {
+  margin-right: 0;
+}
+
+.selling-nike .shop-wrapp .tab-index li .discount-price {
+  display: block;
+  color: #ff7373;
+  font-size: 25px;
+  margin: 26px 0 9px 28px;
+}
+
+.selling-nike .shop-wrapp .tab-index li .discount-price-not {
+  display: block;
+  color: #b1afad;
+  text-decoration: line-through;
+  margin: 0 0 178px 30px;
+}
+
+.selling-nike .shop-wrapp .tab-index li .sale {
+  position: absolute;
+  top: 22px;
+  left: 192px;
+  width: 61px;
+  text-align: center;
+  color: white;
+  background-color: #ff7373;
+  padding: 6px 0;
+}
+
+.selling-nike .shop-wrapp .tab-index li .price {
+  display: block;
+  margin: 26px 0 203px 30px;
+  font-size: 25px;
+}
+
+.selling-nike .shop-wrapp .tab-index li .shop-wrapp-img img {
+  position: absolute;
+  top: 80px;
+  left: 26px;
+  width: 200px;
+}
+
+.selling-nike .shop-wrapp .tab-index li h4 {
+  margin: 0 0 10px 28px;
+  text-transform: uppercase;
+}
+
+.selling-nike .shop-wrapp .tab-index li .article {
+  display: block;
+  margin-left: 30px;
+}
+
+.selling-nike .shop-wrapp .tab-index li a {
+  display: block;
+  width: 180px;
+  margin: 0 0 12px 28px;
+  color: #a19f9d;
+}
+
+.selling-nike .shop-wrapp .shop-list-popular {
+  display: none;
+}
+
+.selling-nike .shop-wrapp .top-picks {
+  display: none;
+}
+
+.selling-nike .label-list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.selling-nike .label-list li {
+  margin: 0 15px 15px 0;
+}
+
+.selling-nike .label-list li:last-child {
+  margin-right: 0;
+}
+
+.peoples-comments {
+  position: relative;
+  background-image: url(../images/background1.jpg);
+  margin-bottom: 100px;
+}
+
+.peoples-comments .list-visitor {
+  max-width: 575px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 100px;
+  margin-bottom: 48px;
+}
+
+.peoples-comments .list-visitor .slick-list {
+  padding: 0 !important;
+}
+
+.peoples-comments .list-visitor .list-item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.peoples-comments .list-visitor .list-item.slick-current.slick-center {
+  opacity: 1;
+}
+
+.peoples-comments .list-visitor .list-item .visitor-photo {
+  width: 65px;
+  height: 65px;
+  background-color: white;
+  border-radius: 50%;
+  margin-bottom: 26px;
+}
+
+.peoples-comments .list-visitor .list-item .name-user {
+  color: white;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.peoples-comments .list-visitor .list-item .name-user-active {
+  color: white;
+  text-align: center;
+}
+
+.peoples-comments .user-comments {
+  margin-bottom: 98px;
+}
+
+.peoples-comments .user-comments::before {
+  content: '';
+  position: absolute;
+  top: -41px;
+  left: 48%;
+  border: 20px solid transparent;
+  border-bottom: 21px solid rgba(255, 255, 255, 0.2);
+}
+
+.peoples-comments .user-comments .comments-item {
+  position: relative;
+  text-align: center;
+  color: white;
+  line-height: 26px;
+  font-size: 18px;
+  border: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 auto;
+  padding: 43px 56px;
+}
+
+.news {
+  margin-bottom: 85px;
+}
+
+.news h3 {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #623232;
+  margin-bottom: 45px;
+}
+
+.news .news-list-wrapp {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.news .news-list-wrapp .news-item {
+  position: relative;
+  color: white;
+}
+
+.news .news-list-wrapp .news-item:last-child .news-wrapp-img img {
+  margin-right: 0;
+}
+
+.news .news-list-wrapp .news-item .news-wrapp-img img {
+  margin: 0 15px 15px 0;
+  object-fit: cover;
+  height: 100%;
+}
+
+.news .news-list-wrapp .news-item .news-description {
+  position: absolute;
+  top: 229px;
+}
+
+.news .news-list-wrapp .news-item .news-description h4 {
+  text-transform: uppercase;
+  margin: 0 0 5px 30px;
+}
+
+.news .news-list-wrapp .news-item .news-description p {
+  width: 220px;
+  margin: 0 0 2px 30px;
+  line-height: 26px;
+}
+
+.news .news-list-wrapp .news-item .news-description .comments {
+  color: #f36e6e;
+  font-size: 14px;
+  margin-left: 20px;
+  padding: 5px 0 5px 40px;
+  background-image: url(../images/51.png);
+  background-repeat: no-repeat;
+  background-position: 9px 3px;
+}
+
+.support {
+  background-color: #ff7373;
+  padding-bottom: 84px;
+}
+
+.support .main-wrapp {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.support .main-wrapp .support-wrapp {
+  padding: 69px 0 0 87px;
+  background-image: url(../images/support.png);
+  background-repeat: no-repeat;
+  background-position: 0px 79px;
+  color: white;
+}
+
+.support .main-wrapp .support-wrapp h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 0 0 13px 0;
+}
+
+.support .main-wrapp .support-wrapp p {
+  word-spacing: 4px;
+  line-height: 19px;
+  max-width: 460px;
+}
+
+.support .main-wrapp .button-wrapp {
+  margin-top: 92px;
+}
+
+.support .main-wrapp .button-wrapp a {
+  text-transform: uppercase;
+  padding: 15px 33px;
+  background-color: #623232;
+}
+
+.support .main-wrapp .button-wrapp a:hover {
+  background-color: #c53b3b;
+}
+
+.footer {
+  background-color: #623232;
+}
+
+.footer .service-benefits {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: white;
+  padding: 55px 0 26px 0;
+  border-bottom: 1px solid #795151;
+  margin-bottom: 100px;
+}
+
+.footer .service-benefits li {
+  width: 150px;
+  text-align: center;
+  margin: 0 15px 15px 0;
+}
+
+.footer .service-benefits li:last-child {
+  margin-right: 0;
+}
+
+.footer .service-benefits li img {
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.footer .service-benefits li p {
+  line-height: 26px;
+}
+
+.footer .wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: white;
+  border-bottom: 1px solid #795151;
+  padding-bottom: 80px;
+  margin-bottom: 42px;
+}
+
+.footer .wrapper a:hover {
+  color: #ff7373;
+}
+
+.footer .wrapper ul {
+  margin: 0 15px 0 0;
+}
+
+.footer .wrapper ul:last-child {
+  margin-right: 0;
+}
+
+.footer .wrapper ul.contact-list li {
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.footer .wrapper ul.contact-list li h4 {
+  text-transform: uppercase;
+  color: #ff7373;
+  margin: 7px 0 10px 18px;
+}
+
+.footer .wrapper ul.contact-list li a,
+.footer .wrapper ul.contact-list li p {
+  margin: 0 0 0 18px;
+}
+
+.footer .wrapper .footer-list li {
+  line-height: 17px;
+  margin-bottom: 18px;
+}
+
+.footer .wrapper .footer-list li.title {
+  text-transform: uppercase;
+  color: #ff7373;
+}
+
+.footer .wrapper .footer-list li.title h4 {
+  margin: 0;
+}
+
+.footer .footer-bottom-wrapp {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.footer .footer-bottom-wrapp .item {
+  margin: 0 30px 15px 0;
+}
+
+.footer .footer-bottom-wrapp .item:last-child {
+  margin-right: 0;
+}
+
+.footer .footer-bottom-wrapp .developed {
+  margin-top: 10px;
+}
+
+.footer .footer-bottom-wrapp .social-list {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .footer-bottom-wrapp .social-list li {
+  margin-right: 23px;
+}
+
+.footer .footer-bottom-wrapp .social-list li:hover {
+  background-color: #c53b3b;
+}
+
+.footer .footer-bottom-wrapp .social-list li a img {
+  height: 27px;
+}
+
+.footer .footer-bottom-wrapp .social-list li:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 1536px) {
+  .variety-sneakers .img-sneaker img {
+    width: 742px;
+  }
+  .variety-sneakers .about-nike {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .variety-sneakers .img-sneaker img {
+    width: 615px;
+    margin-top: 10px;
+  }
+  .variety-sneakers .about-nike {
+    margin-top: 60px;
+  }
+  .variety-sneakers .about-nike li .nike {
+    font-size: 65px;
+  }
+  .advantages-nike .container .viev-collection .advertising {
+    left: calc(40% - 100px);
+  }
+}
+
+@media screen and (max-width: 1152px) {
+  .selling-nike .shop-wrapp .tab-index {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .selling-nike .shop-wrapp .tab-index li {
+    margin: 0 30px 30px 30px;
+  }
+  .selling-nike .shop-wrapp .tab-index li:nth-child(4n+4) {
+    margin-right: 30px;
+  }
+  .news .news-list-wrapp {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .variety-sneakers .about-nike {
+    margin-top: 25px;
+  }
+  .variety-sneakers .about-nike li .nike {
+    font-size: 55px;
+  }
+  .variety-sneakers .about-nike li .about-variants {
+    margin-bottom: 10px;
+  }
+  .advantages-nike .container .viev-collection .advertising {
+    left: 16%;
+  }
+  .footer .service-benefits {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .advantages-nike .container .viev-collection .advertising {
+    left: 8%;
+  }
+  .advantages-nike .container .viev-collection a {
+    left: 22%;
+  }
+}
+
+@media screen and (max-width: 854px) {
+  .header-main .header-top .header-wrapp-top .list-about-shop {
+    display: none;
+  }
+  .header-main .header-top .header-wrapp-top .user-list {
+    margin: 0 auto;
+  }
+  .header-main .header-bottom .header-nav .logo {
+    margin: 12px auto;
+  }
+  .header-main .header-bottom .header-nav .nav-list {
+    display: none;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    z-index: 3;
+    background-color: #623232;
+    width: 100%;
+  }
+  .header-main .header-bottom .header-nav .burger {
+    display: block;
+    margin-right: 10px;
+  }
+  .variety-sneakers {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .variety-sneakers .about-nike {
+    margin: 15px auto;
+    text-align: center;
+  }
+  .variety-sneakers .about-nike li .price {
+    font-size: 20px;
+  }
+  .variety-sneakers .about-nike li .nike {
+    font-size: 40px;
+  }
+  .variety-sneakers .about-nike li .variants {
+    font-size: 35px;
+  }
+  .variety-sneakers .about-nike li .about-variants {
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .variety-sneakers .about-nike li .button {
+    margin: 0 auto;
+  }
+  .advantages-nike .container {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .advantages-nike .container .viev-collection {
+    margin: 0 0 30px 0;
+  }
+  .advantages-nike .container .viev-collection .viev-collection-img img {
+    object-fit: contain;
+    width: 550px;
+  }
+  .advantages-nike .container .viev-collection .advertising {
+    left: 22%;
+  }
+  .advantages-nike .container .viev-collection a {
+    top: 74%;
+    left: 32%;
+  }
+  .advantages-nike .container .advantages {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .advantages-nike .container .advantages .discover {
+    margin-bottom: 20px;
+  }
+  .advantages-nike .container .advantages .discover .discover-img img {
+    object-fit: contain;
+  }
+  .advantages-nike .container .advantages .wrapper .best-athletes {
+    margin-right: 10px;
+  }
+  .advantages-nike .container .advantages .wrapper .best-athletes .best-athletes-img img {
+    object-fit: contain;
+  }
+  .advantages-nike .container .advantages .wrapper .premium .premium-img img {
+    object-fit: contain;
+  }
+  .peoples-comments .user-comments::before {
+    left: calc(48% - 7px);
+  }
+  .support .main-wrapp {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .selling-nike .label-list {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .selling-nike .label-list li {
+    margin: 0 0 30px 0;
+  }
+  .news .news-list-wrapp .news-item:last-child .news-wrapp-img img {
+    margin-right: 15px;
+  }
+  .footer .service-benefits li {
+    margin: 0 0 15px 0;
+  }
+  .footer .wrapper ul:last-child {
+    -ms-flex-positive: 1;
+        flex-grow: 1;
+  }
+  .footer .footer-bottom-wrapp {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .footer .footer-bottom-wrapp {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .footer .footer-bottom-wrapp .item {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .selling-nike .nav-list .nav-item {
+    font-size: 26px;
+  }
+  .selling-nike .shop-wrapp .tab-index {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .advantages-nike .container .viev-collection {
+    margin-bottom: 20px;
+  }
+  .advantages-nike .container .viev-collection .viev-collection-img img {
+    object-fit: cover;
+    width: auto;
+  }
+  .advantages-nike .container .viev-collection .advertising {
+    left: calc(50% - 100px);
+    font-size: 23px;
+    width: 200px;
+  }
+  .advantages-nike .container .viev-collection a {
+    top: 74%;
+    left: calc(48% - 100px);
+  }
+  .advantages-nike .container .advantages {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .advantages-nike .container .advantages .discover .discover-img img {
+    object-fit: cover;
+  }
+  .advantages-nike .container .advantages .discover p {
+    left: calc(37% - 52px);
+    width: 200px;
+    font-size: 23px;
+  }
+  .advantages-nike .container .advantages .discover p strong {
+    color: #ffbbbb;
+  }
+  .advantages-nike .container .advantages .discover a {
+    left: calc(44% - 50px);
+  }
+  .advantages-nike .container .advantages .wrapper {
+    display: block;
+  }
+  .advantages-nike .container .advantages .wrapper .best-athletes {
+    margin-bottom: 20px;
+  }
+  .advantages-nike .container .advantages .wrapper .best-athletes .best-athletes-img img {
+    object-fit: cover;
+  }
+  .advantages-nike .container .advantages .wrapper .premium .premium-img img {
+    object-fit: cover;
+  }
+  .selling-nike .container .nav-list {
+    margin-left: 12px;
+  }
+  .selling-nike .container .nav-list .nav-item {
+    font-size: 13px;
+  }
+  .selling-nike .container .shop-wrapp .tab-index {
+    margin-bottom: 0;
+  }
+  .peoples-comments .list-visitor .slick-prev {
+    position: relative;
+    left: 3%;
+    top: 54px;
+    z-index: 1;
+  }
+  .peoples-comments .list-visitor .slick-prev::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 4px;
+    transform: rotate(-45deg);
+    background-color: #bb4545;
+  }
+  .peoples-comments .list-visitor .slick-prev::after {
+    content: '';
+    position: absolute;
+    top: 16px;
+    left: 0;
+    width: 25px;
+    height: 4px;
+    transform: rotate(45deg);
+    background-color: #bb4545;
+  }
+  .peoples-comments .list-visitor .slick-next {
+    position: relative;
+    left: 93%;
+    bottom: 100px;
+  }
+  .peoples-comments .list-visitor .slick-next::before {
+    content: '';
+    position: absolute;
+    top: 17px;
+    right: 2px;
+    width: 25px;
+    height: 4px;
+    transform: rotate(-45deg);
+    background-color: #bb4545;
+  }
+  .peoples-comments .list-visitor .slick-next::after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    right: 3px;
+    width: 25px;
+    height: 4px;
+    transform: rotate(45deg);
+    background-color: #bb4545;
+  }
+  .peoples-comments .user-comments::before {
+    left: calc(47% - 7px);
+  }
+  .support .main-wrapp .support-wrapp h3 {
+    font-size: 17px;
+  }
+  .support .main-wrapp .support-wrapp p {
+    font-size: 13px;
+  }
+  .footer .wrapper {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .footer .wrapper .footer-list {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 352px) {
+  .header-main .header-top .header-wrapp-top .user-list {
+    margin: 0 auto;
+  }
+  .header-main .header-top .header-wrapp-top .user-list li a {
+    padding: 12px 15px;
+  }
+}
+
+
+
+
+
+
+
+
